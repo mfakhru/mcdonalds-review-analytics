@@ -4,8 +4,7 @@
 
 McDonald's merupakan salah satu restoran _fast food_ terbesar di dunia. Restoran ini merupakan hasil penemuan seorang pria bernama Ray Kroc pada tahun 1954 di California. Sampai saat ini, McDonald's memiliki lebih dari 36.000 restoran yang tersebar di lebih dari 100 negara [[1]](https://www.mcdonalds.com/us/en-us/about-us/about-us.html). Sehingga restoran ini sangat terkemuka dan tentu banyak orang yang tahu. 
 
-![mcdonald](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/mcdonald.jpg)
-
+![mcdonald](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/e4293feb-be54-470e-8421-319f3d928544)
 Gambar 1. Logo McDonald's
 
 Pada pada riset [[2]](https://ejournal.aibpmjournals.com/index.php/APJME/article/view/1070), membahas mengenai kebiasaan konsumen McDonald's selama masa pandemi. Secara singkat riset tersebut membahas tentang perubahan perilaku konsumen McDonald's selama pandemi COVID-19, termasuk perubahan dalam frekuensi kunjungan, mode pelayanan yang disukai, dan metode pembayaran yang disukai. Kemudian terdapat sebuah artikel [[3]](https://www.start.io/blog/who-is-mcdonalds-target-market-mcdonalds-brand-analysis-audience-marketing-strategy-competitors/), membahas mengenai analisis merek. Bahwa McDonald's secara garis besar selalu konsisten dan tetap kuat dengan pelayanannya. Kemudian operasional yang dilakukan selalu disesuaikan dengan lingkungan lokal. 
@@ -43,7 +42,7 @@ Berikut informasi pada dataset:
 
 Informasi selengkapnya dapat diperhatikan pada Gambar 2.
 
-![info-data](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/data-info.jpg)   
+![data-info](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/aaab4454-07a8-40c9-9ee4-c934cdb7a6bf)
 Gambar 2. Informasi Data
 
 
@@ -63,43 +62,43 @@ Untuk memahami variabel-variabel tersebut dilakukan beberapa tahapan _explorator
 
 Setelah itu dilakukan analisa terhadap _rating_ yang diberikan oleh customer, berapa rata-rata, total rating, dan sebagainya. Berikut merupakan hasil analisa, yang dapat ditampilkan pada Gambar 3.
 
-![rating-scale](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/rating-sclae-desc.jpg)    
+![rating-sclae-desc](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/f8ba6388-5af5-4831-87d9-a8678d9a151d)    
 Gambar 3. Skala _Rating_
 
 Berdasarkan gambar tersebut, _rating_ yang diberikan oleh konsumen terendah yaitu 1 dan tertinggi adalah 5. Kemudian untuk rata-rata _rating_ yang diberikan yaitu 3.13. Data yang digunakan yaitu untuk restoran McDonald's yang ada di United States. Pada tahap ini, yang dilakukan analisa hanya berfokus terhadap fitur _rating_. Karena fitur ini sangat cocok untuk dijadikan parameter utama.
 
 Setelah menganalisa _rating_, selanjutnya adalah melakukan _drop_ atau membuang fitur atau kolom yang tidak digunakan seperti reviewr_id, store_name, category, karena fitur tersebut cenderung tidak memiliki banyak variasi data. Seperti yang ditampilkan pada Gambar 4 berikut.
 
-![data-unique](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/data-unique.jpg)  
+![data-unique](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/4ae0487f-2e87-4f4f-8b94-542dbcddcaf2)  
 Gambar 4. Data Unik
 
 Terlihat bahwa pada store_name, hanya ada McDonald's dan ýýýMcDonald's yang dipastikan bahwa kedua kata tersebut adalah maksud yang sama. Kemudian pada category hanya ada _Fast food restaurant_. Sedangkan pada review_id, merupakan kode unik berupa id para konsumen yang beberikan ulasan.
 
 Selanjutnya mengubah store_address dengan hanya mengambil alamat jalan dan nama kota. Karena berdasarkan informasi pada Gambar 5.
 
-![store-address](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/store-address.jpg)   
+![store-address](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/5183f552-7f28-4ef8-a2c3-f27634439b9f)    
 Gambar 5. Alamat Restoran
 
 Berdasarkan Gambar 5 tersebut, bahwa terdapat informasi jalan, nama kota, singkatan negara bagian dan kode pos, serta negara.
 
 Selain melihat informasi pada data yang digunakan, hal penting lainnya yang dilakukan yaitu dengan melakukan visualisasi data. Pada Gambar 6 berikut, akan ditampilkan distribusi _rating_ berdasarkan bintang. 
 
-![distribusi-rating](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/hist-rating.jpg)   
+![hist-rating](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/c0852650-af37-49fa-af33-1f64328ec757)   
 Gambar 6. Distribusi _Rating_
 
 Berdasarkan Gambar 6 tersebut, terlihat bahwa tertinggi ada pada _rating_ bintang 5 dan selanjutkan ada pada _rating_ bintang 1. Jumlah pada setiap _rating_ akan ditampilkan pada Gambar 7.
 
-![total-rating](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/count-rating.jpg)   
+![count-rating](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/96d4c2fc-d45c-4685-b555-0026de41df04)   
 Gambar 7. Total _Rating_
 
 Ternyata, data tersebut tidak sepenuhnya merata pada setiap retoran. Berdasarkan perhitungan, data ulasan terbanyak ada di 9814 International Dr, Orlando sebanyak 1890 ulasan dengan presentase dari total keseluruhan yaitu 5.8%. Secara lengkap akan ditampilkan pada Gambar 8 berikut ini.
 
-![presentase-store](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/presentase-store-review.jpg)   
+![presentase-store-review](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/2ac8c700-70a1-43a3-95ac-b1ce40bc157f)      
 Gambar 8. Presentase Ulasan per-Restoran
 
 Jika dilihat dengan visualisasi, maka akan seperti pada Gambar 9 berikut.
 
-![hist-review-store](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/hist-store.jpg)   
+![hist-store](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/0228a0a1-b79c-4f09-b73a-2a0025d71a48)   
 Gambar 9. Distribusi Ulasan setiap Restoran
 
 ## Data Preparation
@@ -132,7 +131,7 @@ Selain itu terdapat juga nilai R2 (R-squared), nilai ini seharusnya berkisar ant
 
 Lebih jelas dapat dilihat pada Gambar 10.
 
-![eval-linear-reg](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/linear-reg.jpg)    
+![linear-reg](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/2e7de69e-5fc2-424f-831d-0001bf143c42)    
 Gambar 10. Evaluasi Linear Regresi
 
 ### 02 Metode Algoritma Naive Bayes
@@ -140,7 +139,7 @@ Pertama yaitu nilai akurasi, dimana nilai akurasi proyek ini adalah 0.6285888821
 
 Kemudian untuk _precission_, _recall_, _f1-score_ dapat dilihat pada Gambar 11. 
 
-![eval-bayes](https://github.com/mfakhru/mcdonalds-review-analytics/blob/main/pict/naive-bay.jpg)   
+![naive-bay](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/1ccde765-1d32-45e9-ab86-b213d17bc6ca)   
 Gambar 11. Evaluasi Naive Bayes
 
 Berdasarkan Gambar 11, dapat sedikit disimpulkan bahwa model Naive Bayes memiliki performa yang lebih baik dalam memprediksi kelas 1 _star_ dan 5 _stars_, dengan _recall_ yang tinggi. Namun, performa model tersebut kurang baik dalam memprediksi kelas 2 _stars_, 3 _stars_, dan 4 _stars_, dengan _recall_ yang rendah. Ini dikarenakan dengan adanya ketidakseimbangan dalam kualitas prediksi antara kelas-kelas tersebut. Sehingga perlu diperhatikan performa pada masing-masing kelas yaitu kelas bintang 1-5.
