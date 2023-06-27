@@ -5,6 +5,7 @@
 McDonald's merupakan salah satu restoran _fast food_ terbesar di dunia. Restoran ini merupakan hasil penemuan seorang pria bernama Ray Kroc pada tahun 1954 di California. Sampai saat ini, McDonald's memiliki lebih dari 36.000 restoran yang tersebar di lebih dari 100 negara [[1]](https://www.mcdonalds.com/us/en-us/about-us/about-us.html). Sehingga restoran ini sangat terkemuka dan tentu banyak orang yang tahu. 
 
 ![mcdonald](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/e4293feb-be54-470e-8421-319f3d928544)
+
 Gambar 1. Logo McDonald's
 
 Pada pada riset [[2]](https://ejournal.aibpmjournals.com/index.php/APJME/article/view/1070), membahas mengenai kebiasaan konsumen McDonald's selama masa pandemi. Secara singkat riset tersebut membahas tentang perubahan perilaku konsumen McDonald's selama pandemi COVID-19, termasuk perubahan dalam frekuensi kunjungan, mode pelayanan yang disukai, dan metode pembayaran yang disukai. Kemudian terdapat sebuah artikel [[3]](https://www.start.io/blog/who-is-mcdonalds-target-market-mcdonalds-brand-analysis-audience-marketing-strategy-competitors/), membahas mengenai analisis merek. Bahwa McDonald's secara garis besar selalu konsisten dan tetap kuat dengan pelayanannya. Kemudian operasional yang dilakukan selalu disesuaikan dengan lingkungan lokal. 
@@ -42,7 +43,7 @@ Berikut informasi pada dataset:
 
 Informasi selengkapnya dapat diperhatikan pada Gambar 2.
 
-![data-info](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/aaab4454-07a8-40c9-9ee4-c934cdb7a6bf)
+![data-info](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/aaab4454-07a8-40c9-9ee4-c934cdb7a6bf)  
 Gambar 2. Informasi Data
 
 
@@ -76,7 +77,7 @@ Terlihat bahwa pada store_name, hanya ada McDonald's dan ýýýMcDonald's yang d
 
 Selanjutnya mengubah store_address dengan hanya mengambil alamat jalan dan nama kota. Karena berdasarkan informasi pada Gambar 5.
 
-![store-address](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/5183f552-7f28-4ef8-a2c3-f27634439b9f)    
+![store-address](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/5183f552-7f28-4ef8-a2c3-f27634439b9f)       
 Gambar 5. Alamat Restoran
 
 Berdasarkan Gambar 5 tersebut, bahwa terdapat informasi jalan, nama kota, singkatan negara bagian dan kode pos, serta negara.
@@ -93,12 +94,12 @@ Gambar 7. Total _Rating_
 
 Ternyata, data tersebut tidak sepenuhnya merata pada setiap retoran. Berdasarkan perhitungan, data ulasan terbanyak ada di 9814 International Dr, Orlando sebanyak 1890 ulasan dengan presentase dari total keseluruhan yaitu 5.8%. Secara lengkap akan ditampilkan pada Gambar 8 berikut ini.
 
-![presentase-store-review](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/2ac8c700-70a1-43a3-95ac-b1ce40bc157f)      
+![presentase-store-review](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/2ac8c700-70a1-43a3-95ac-b1ce40bc157f)   
 Gambar 8. Presentase Ulasan per-Restoran
 
 Jika dilihat dengan visualisasi, maka akan seperti pada Gambar 9 berikut.
 
-![hist-store](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/0228a0a1-b79c-4f09-b73a-2a0025d71a48)   
+![hist-store](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/0228a0a1-b79c-4f09-b73a-2a0025d71a48)    
 Gambar 9. Distribusi Ulasan setiap Restoran
 
 ## Data Preparation
@@ -131,7 +132,7 @@ Selain itu terdapat juga nilai R2 (R-squared), nilai ini seharusnya berkisar ant
 
 Lebih jelas dapat dilihat pada Gambar 10.
 
-![linear-reg](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/2e7de69e-5fc2-424f-831d-0001bf143c42)    
+![linear-reg](https://github.com/mfakhru/mcdonalds-review-analytics/assets/68620507/2e7de69e-5fc2-424f-831d-0001bf143c42)       
 Gambar 10. Evaluasi Linear Regresi
 
 ### 02 Metode Algoritma Naive Bayes
